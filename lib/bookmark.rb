@@ -6,3 +6,4 @@ class Bookmark
   ]
   end
 end
+
