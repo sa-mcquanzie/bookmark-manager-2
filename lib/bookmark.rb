@@ -1,11 +1,9 @@
-# in lib/bookmark.rb
-
 class Bookmark
   def self.all
     [
-      "http://www.makersacademy.com",
-      "http://www.destroyallsoftware.com",
-      "http://www.google.com"
-     ]
+    "http://www.github.com/",
+    "http://www.makers.tech/"
+  ]
   end
 end
+

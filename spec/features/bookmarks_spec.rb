@@ -1,6 +1,7 @@
-feature 'view_bookmarks' do 
-  scenario 'should check the page works' do 
-    visit '/bookmarks'
-    expect(page).to have_content "http://www.makersacademy.com"
+feature 'bookmarks page' do
+  scenario 'checks the page has content' do
+    visit "/bookmarks"
+    expect(page).to have_content "http://www.github.com/"
+    expect(page).to have_content "http://www.makers.tech/"
   end
 end
