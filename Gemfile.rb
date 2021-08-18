@@ -1,5 +1,0 @@
-require 'sinatra'
-require 'rspec'
-require 'capybara'
-require '2.6.5'
-require 'pg'
