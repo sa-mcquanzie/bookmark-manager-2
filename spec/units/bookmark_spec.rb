@@ -2,6 +2,7 @@ require './lib/bookmark.rb'
 
 describe Bookmark do
   before do
+    create_test_table
     clear_db
     add_test_bookmarks
   end

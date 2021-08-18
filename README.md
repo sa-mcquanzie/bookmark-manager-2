@@ -20,3 +20,9 @@ To set up the appropriate tables, connect to the database in `psql` and run the 
 As a busy person
 I want to see a list of bookmarks of website i visit often
 So that i can easily access the websites
+
+## User story 2
+
+As a busy person
+I want to be able to save a webpage as a new bookmark
+So that I can easily revisit it when I need to
