@@ -1,6 +1,11 @@
 require './lib/bookmark.rb'
 
 describe Bookmark do
+  before do
+    clear_db
+    add_test_bookmarks
+  end
+
   it 'shows all the bookmarks' do
     bookmarks = Bookmark.all
     expect(bookmarks).to include "http://www.askjeeves.com/"

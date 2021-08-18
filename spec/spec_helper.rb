@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'capybara'
 require 'capybara/rspec'
+require_relative './db_helpers.rb'
 
 ENV['RACK_ENV'] = 'test'
 
