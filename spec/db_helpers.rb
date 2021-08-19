@@ -14,7 +14,7 @@ def clear_db
 end
 
 def add_test_bookmarks
-  Bookmark.create('http://www.askjeeves.com/')
-  Bookmark.create('http://www.twitter.com/')
-  Bookmark.create('http://www.google.com/')
+  Bookmark.create('Ask Jeeves', 'http://www.askjeeves.com/')
+  Bookmark.create('Twitter', 'http://www.twitter.com/')
+  Bookmark.create('Google', 'http://www.google.com/')
 end

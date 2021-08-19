@@ -5,8 +5,8 @@ feature 'bookmarks page' do
     add_test_bookmarks
 
     visit "/bookmarks"
-    expect(page).to have_content "http://www.askjeeves.com/"
-    expect(page).to have_content "http://www.twitter.com/"
-    expect(page).to have_content "http://www.google.com/"
+    expect(page).to have_content "Ask Jeeves"
+    expect(page).to have_content "Twitter"
+    expect(page).to have_content "Google"
   end
 end

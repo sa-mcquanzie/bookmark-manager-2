@@ -7,10 +7,11 @@ describe Bookmark do
     add_test_bookmarks
   end
 
-  it 'shows all the bookmarks' do
+  it 'returns all the bookmarks' do
     bookmarks = Bookmark.all
-    expect(bookmarks).to include "http://www.askjeeves.com/"
-    expect(bookmarks).to include "http://www.twitter.com/"
-    expect(bookmarks).to include "http://www.google.com/"
+
+    expect(bookmarks).to include ["Ask Jeeves", "http://www.askjeeves.com/"]
+    expect(bookmarks).to include ["Twitter", "http://www.twitter.com/"]
+    expect(bookmarks).to include ["Google", "http://www.google.com/"]
   end
 end
