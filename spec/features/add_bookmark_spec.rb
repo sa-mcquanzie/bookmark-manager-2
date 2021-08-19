@@ -3,7 +3,7 @@ feature 'add bookmark' do
     visit ('/')
     fill_in('title', with: 'Hamster Dance')
     fill_in('url', with: 'http://www.hamsterdance.com/')
-    click_button("Submit")
+    click_button("Add")
     expect(page).to have_content "Hamster Dance"
     expect(page).to_not have_content "error"
   end

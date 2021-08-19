@@ -24,7 +24,17 @@ class Bookmark
     end
     
     result = connection.exec("SELECT * FROM bookmarks;")
-    result.map { |bookmark| [bookmark['title'], bookmark['url']] }
+    result.map { |bookmark| [bookmark['id'], bookmark['title'], bookmark['url']] }
+  end
+  def self.delete(id:)
+    if ENV['RACK_ENV'] == 'test'
+      connection = PG.connect(dbname: 'bookmark_manager_test')
+    else
+      connection = PG.connect(dbname: 'bookmark_manager')
+    end
+
+    connection.exec_params("DELETE FROM bookmarks WHERE id = $1", [id])
+    connection.close
   end
 end
 
